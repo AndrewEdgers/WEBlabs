@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Варіант 1</title>
+    <link href="v1.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <form id="form" class="form">
+        <h2>Реєстрація</h2>
+        <div class="form-control">
+            <label for="username">Ім'я</label>
+            <input type="text" id="username" placeholder="Enter Username">
+            <small>Error Message</small>
+        </div>
+        <div class="form-control">
+            <label>
+                Оберіть дату
+                <input type="date" name="party" min="2017-04-01" max="2020-04-20" required>
+                <span class="validity"></span>
+            </label>
+
+            <p>
+        </div>
+
+        <div class="form-control">
+            <label>
+                Введіть ціле число
+                <input type="number" step="1" pattern="^[-\d]\d*$"><br>
+
+                <span class="validity"></span>
+            </label>
+
+            <p>
+        </div>
+        <div class="form-control">
+            <label>
+                Введіть не ціле число
+                <input type="number"><br>
+
+                <span class="validity"></span>
+            </label>
+
+            <p>
+        </div>
+        <div class="form-control">
+            <label for="password">Пароль</label>
+            <input type="password" id="password" placeholder="Enter password">
+            <small>Error Message</small>
+        </div>
+        <div class="form-control">
+            <label for="password2">Підтвердження паролю</label>
+            <input type="password" id="password2" placeholder="Enter password again">
+            <small>Error Message</small>
+        </div>
+        <button>Відправити</button>
+    </form>
+</div>
+</body>
+<script src="var1.js"></script>
+</html>
